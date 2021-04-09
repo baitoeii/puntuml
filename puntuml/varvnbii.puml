@@ -1,0 +1,8 @@
+@startuml
+user --> (select mune)
+(select mune) -right-> (order)
+(order) -right-> (pay)
+
+(on money) -up-|> (pay)#green;line.dashed;text:green : extends
+(Scan pay) -up-|> (pay)#green;line.dashed;text:green : extends
+@enduml

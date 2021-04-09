@@ -1,0 +1,6 @@
+@startuml
+user --> (on the mobile)
+(on the mobile) -right-> (Connect internet)
+(Internet crashing) -up-|> (Connect internet)#green;line.dashed;text:green : extends
+(Play mobile) -left-|>  (Connect internet)#green;line.dashed;text:green : extends
+@enduml
